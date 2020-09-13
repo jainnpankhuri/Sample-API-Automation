@@ -1,0 +1,226 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "Get all the details for given launchId",
+        "id": "space-x-api-requests;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 332571800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have launchId with URL",
+            "match": {
+              "location": "stepDefinition.i_have_launchId_with_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1568622100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I send the GET request for given launchId",
+            "match": {
+              "location": "stepDefinition.i_send_the_GET_request_for_given_launchId()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 438867600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the WS GET response should have success response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 50
+                }
+              ],
+              "location": "stepDefinition.the_WS_GET_response_should_have_success_response(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "POST all the details to create new launchId",
+        "description": "",
+        "id": "space-x-api-requests;post-all-the-details-to-create-new-launchid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I set post posts API endpoint",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I set HEADER param request content type as \"application/json.\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "set request body",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "send POST HTTP request -\u003eThis is actual test step of sending a post request",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I receive valid HTPP response code 201",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "Response body \"POST\" is non-empty-\u003e This is verification of response body",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "UPDATE details for a given launchId",
+        "description": "",
+        "id": "space-x-api-requests;update-details-for-a-given-launchid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "I Set PUT posts api endpoint for givenLaunchId",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "I Set Update request Body",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "Send PUT HTTP request",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I receive valid HTTP response code 200 for \"PUT.\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "Response BODY \"PUT\" is non-empty",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "DELETE given launchId",
+        "description": "",
+        "id": "space-x-api-requests;delete-given-launchid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "I Set DELETE posts api endpoint for gven launcId",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "I Send DELETE HTTP request",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "I receive valid HTTP response code 200 for \"DELETE.\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Space X API Requests",
+    "description": "",
+    "id": "space-x-api-requests",
+    "keyword": "Feature",
+    "uri": "SpaceX API GET Service.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SmokeTest"
+      }
+    ]
+  }
+]
